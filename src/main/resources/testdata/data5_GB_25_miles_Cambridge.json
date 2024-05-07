@@ -1,0 +1,1055 @@
+[
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.teslamotors.com",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 23,
+      "Title": "Tesla (Tesla-only charging)"
+    },
+    "UsageType": {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": false,
+      "IsAccessKeyRequired": false,
+      "ID": 6,
+      "Title": "Private - For Staff, Visitors or Customers"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2018-10-03T20:02:00Z",
+    "ID": 75328,
+    "UUID": "694EFBA1-D151-4514-BD49-BF095CED7D7F",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "17142",
+    "UsageTypeID": 6,
+    "UsageCost": "Free",
+    "AddressInfo": {
+      "ID": 75674,
+      "Title": "The Gonville Hotel",
+      "AddressLine1": "The Gonville Hotel",
+      "Town": "Cambridge",
+      "Postcode": "CB1 1LY",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.199851,
+      "Longitude": 0.128561,
+      "ContactTelephone1": "\u002B44 122 336 6611",
+      "Distance": 0.5466021714273739,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 108633,
+        "ConnectionTypeID": 30,
+        "ConnectionType": {
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 30,
+          "Title": "Tesla (Model S/X)"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 16,
+        "Voltage": 400,
+        "PowerKW": 11,
+        "CurrentTypeID": 20,
+        "CurrentType": {
+          "Description": "Alternating Current - Three Phase",
+          "ID": 20,
+          "Title": "AC (Three-Phase)"
+        },
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "1 Tesla Connector, up to 11kW.Available for patrons only. Please call ahead.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2018-10-03T20:02:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-12-14T17:32:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "http://zerocarbonworld.org/",
+      "Comments": "UK Charity promoting carbon reduction",
+      "IsPrivateIndividual": false,
+      "ContactEmail": "info@zerocarbonworld.com",
+      "FaultReportEmail": "info@zerocarbonworld.com",
+      "ID": 19,
+      "Title": "Zero Carbon World"
+    },
+    "UsageType": {
+      "ID": 1,
+      "Title": "Public"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": [
+      {
+        "ID": 14507,
+        "ChargePointID": 18593,
+        "CommentTypeID": 10,
+        "CommentType": {
+          "ID": 10,
+          "Title": "General Comment"
+        },
+        "UserName": "dodavies",
+        "Comment": "\u00A312 for non guest\n2 X 22kw tesla units",
+        "DateCreated": "2016-11-05T13:59:59.637Z",
+        "User": {
+          "ID": 1195,
+          "Username": "dodavies",
+          "ReputationPoints": 108,
+          "ProfileImageURL": "https://www.gravatar.com/avatar/1e7e4bb66f6fe7e0d144b101a329de80?s=80\u0026d=robohash"
+        },
+        "CheckinStatusTypeID": 10,
+        "CheckinStatusType": {
+          "IsPositive": true,
+          "IsAutomatedCheckin": false,
+          "ID": 10,
+          "Title": "Charged Successfully"
+        }
+      }
+    ],
+    "MediaItems": [
+      {
+        "ID": 8541,
+        "ChargePointID": 18593,
+        "ItemURL": "https://media.openchargemap.io/images/GB/OCM18593/OCM-18593.orig.2016110514003150.jpg",
+        "ItemThumbnailURL": "https://media.openchargemap.io/images/GB/OCM18593/OCM-18593.thmb.2016110514003150.jpg",
+        "Comment": "",
+        "IsEnabled": true,
+        "IsVideo": false,
+        "IsFeaturedItem": false,
+        "IsExternalResource": false,
+        "User": {
+          "ID": 1195,
+          "Username": "dodavies",
+          "ReputationPoints": 108,
+          "ProfileImageURL": "https://www.gravatar.com/avatar/1e7e4bb66f6fe7e0d144b101a329de80?s=80\u0026d=robohash"
+        },
+        "DateCreated": "2016-11-05T14:01:00Z"
+      }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2016-11-05T14:01:00Z",
+    "ID": 18593,
+    "UUID": "ABC18DAE-D4D6-4A31-9355-F06932A3E033",
+    "DataProviderID": 1,
+    "OperatorID": 19,
+    "UsageTypeID": 1,
+    "UsageCost": "",
+    "AddressInfo": {
+      "ID": 18938,
+      "Title": "Best Western Plus The Gonville Hotel",
+      "AddressLine1": "Gonville Place",
+      "AddressLine2": "",
+      "Town": "Cambridge",
+      "StateOrProvince": "Cambridgeshire",
+      "Postcode": "CB1 1LY",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.199818,
+      "Longitude": 0.12866,
+      "ContactTelephone1": "01223 366611",
+      "ContactTelephone2": "",
+      "ContactEmail": "info@gonvillehotel.co.uk",
+      "AccessComments": "",
+      "RelatedURL": "http://www.gonvillehotel.co.uk/",
+      "Distance": 0.5512186337140215,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 18820,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2016-11-05T14:01:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2013-08-19T14:33:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.bppulse.co.uk/",
+      "Comments": "Formerly known as Polar Network, or BP Chargemaster",
+      "PhonePrimaryContact": "01582 400331",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 32,
+      "Title": "BP Pulse (UK)"
+    },
+    "UsageType": {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": true,
+      "IsAccessKeyRequired": true,
+      "ID": 4,
+      "Title": "Public - Membership Required"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": [
+      {
+        "ID": 4171,
+        "ChargePointID": 5449,
+        "CommentTypeID": 10,
+        "CommentType": {
+          "ID": 10,
+          "Title": "General Comment"
+        },
+        "UserName": "",
+        "Comment": "Our first charge away from home! Used Polar app on phone to set up charging. Worked great although app a has a tendency to crash. ",
+        "Rating": 4,
+        "DateCreated": "2015-04-06T19:48:17.22Z",
+        "CheckinStatusTypeID": 10,
+        "CheckinStatusType": {
+          "IsPositive": true,
+          "IsAutomatedCheckin": false,
+          "ID": 10,
+          "Title": "Charged Successfully"
+        }
+      },
+      {
+        "ID": 117,
+        "ChargePointID": 5449,
+        "CommentTypeID": 110,
+        "CommentType": {
+          "ID": 110,
+          "Title": "Suggested Changed (Actioned By Editor)"
+        },
+        "UserName": "C Wood",
+        "Comment": "You need to be a charge master card holder to use",
+        "DateCreated": "2012-05-22T13:37:16.587Z"
+      }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2019-03-05T06:35:00Z",
+    "ID": 5449,
+    "UUID": "85924D71-5A75-4FCD-A018-C24AC7E6B4E6",
+    "DataProviderID": 1,
+    "OperatorID": 32,
+    "OperatorsReference": "106",
+    "UsageTypeID": 4,
+    "UsageCost": "Inclusive; for Polar Plus subscription members only. Parking fees apply.",
+    "AddressInfo": {
+      "ID": 5387,
+      "Title": "Queen Anne Terrace Car Park",
+      "AddressLine1": "Queen Anne Terrace",
+      "Town": "Cambridge",
+      "StateOrProvince": "Cambridgeshire",
+      "Postcode": "CB1 1ND",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.2004622,
+      "Longitude": 0.1303147,
+      "ContactTelephone1": "01223 458283",
+      "RelatedURL": "http://www.cambridge.gov.uk/ccm/content/transport-and-streets/car-parks/queen-anne-terrace-car-park.en",
+      "Distance": 0.5774911159225207,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 26723,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-03-05T06:35:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2011-08-29T11:42:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.swarcoeconnect.org/",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 3341,
+      "Title": "Swarco E.Connect"
+    },
+    "UsageType": {
+      "IsMembershipRequired": true,
+      "ID": 2,
+      "Title": "Private - Restricted Access"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2023-07-27T19:40:00Z",
+    "ID": 117777,
+    "UUID": "4EE91DB1-DAC1-4FD4-BEAC-F50B9BD67058",
+    "DataProviderID": 1,
+    "OperatorID": 3341,
+    "OperatorsReference": "SEC50040,SEC50041",
+    "UsageTypeID": 2,
+    "UsageCost": "\u00A30.25/kWh",
+    "AddressInfo": {
+      "ID": 118123,
+      "Title": " Adam and Eve Street Car Park - e-taxis only",
+      "AddressLine1": "Adam and Eve Street",
+      "AddressLine2": "Petersfield",
+      "Town": "Cambridge",
+      "StateOrProvince": "Cambridgeshire",
+      "Postcode": "CB1 1DX",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.2052669843386,
+      "Longitude": 0.133268108070524,
+      "AccessComments": "e-taxi access only",
+      "Distance": 0.5971170169023038,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 166648,
+        "ConnectionTypeID": 33,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration FF",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 33,
+          "Title": "CCS (Type 2)"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 2
+      },
+      {
+        "ID": 166649,
+        "ConnectionTypeID": 2,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-3 Configuration AA",
+          "ID": 2,
+          "Title": "CHAdeMO"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "CurrentType": {
+          "Description": "Direct Current",
+          "ID": 30,
+          "Title": "DC"
+        },
+        "Quantity": 2
+      },
+      {
+        "ID": 166650,
+        "ConnectionTypeID": 1036,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 1036,
+          "Title": "Type 2 (Tethered Connector) "
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 3,
+        "Level": {
+          "Comments": "40KW and Higher",
+          "IsFastChargeCapable": true,
+          "ID": 3,
+          "Title": "Level 3:  High (Over 40kW)"
+        },
+        "PowerKW": 43,
+        "CurrentTypeID": 20,
+        "CurrentType": {
+          "Description": "Alternating Current - Three Phase",
+          "ID": 20,
+          "Title": "AC (Three-Phase)"
+        },
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Swarco E.Connect. Taxi Drivers can pay via contactless payment or membership RFID cards.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-27T19:40:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-03-01T15:09:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://chargepoints.dft.gov.uk",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Contains public sector information licensed under the Open Government Licence v2.0.",
+      "DateLastImported": "2023-12-07T08:14:38.417Z",
+      "ID": 18,
+      "Title": "UK National Charge Point Registry"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.bppulse.co.uk/",
+      "Comments": "Formerly known as Polar Network, or BP Chargemaster",
+      "PhonePrimaryContact": "01582 400331",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 32,
+      "Title": "BP Pulse (UK)"
+    },
+    "UsageType": {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": true,
+      "IsAccessKeyRequired": true,
+      "ID": 4,
+      "Title": "Public - Membership Required"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2023-05-04T08:50:00Z",
+    "ID": 255054,
+    "UUID": "FEB13937-DCFB-46ED-B99A-01A2F7FA1458",
+    "DataProviderID": 18,
+    "DataProvidersReference": "68eb8c5d30b1f6b895cb3a4e33e21c58",
+    "OperatorID": 32,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+      "ID": 255438,
+      "Title": "Grafton East Car Park",
+      "AddressLine1": "East Street",
+      "Town": "Cambridge",
+      "Postcode": "CB1 1PS",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.207001,
+      "Longitude": 0.133275,
+      "AccessComments": "",
+      "RelatedURL": "https://www.bpchargemaster.com",
+      "Distance": 0.609171633403741,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 423019,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "Reference": "1",
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 16,
+        "Voltage": 230,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        }
+      },
+      {
+        "ID": 423020,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "Reference": "2",
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 16,
+        "Voltage": 230,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        }
+      }
+    ],
+    "DateLastStatusUpdate": "2023-05-04T08:50:00Z",
+    "MetadataValues": [
+      {
+        "ID": 27036,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 3,
+    "DateCreated": "2023-03-07T08:02:00Z",
+    "SubmissionStatusTypeID": 100
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.bppulse.co.uk/",
+      "Comments": "Formerly known as Polar Network, or BP Chargemaster",
+      "PhonePrimaryContact": "01582 400331",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 32,
+      "Title": "BP Pulse (UK)"
+    },
+    "UsageType": {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": true,
+      "IsAccessKeyRequired": true,
+      "ID": 4,
+      "Title": "Public - Membership Required"
+    },
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": [
+      {
+        "ID": 152,
+        "ChargePointID": 5450,
+        "CommentTypeID": 10,
+        "CommentType": {
+          "ID": 10,
+          "Title": "General Comment"
+        },
+        "UserName": "Jon tracey",
+        "Comment": "Also now supports polar networks cards",
+        "DateCreated": "2012-08-12T20:21:11.947Z"
+      },
+      {
+        "ID": 120,
+        "ChargePointID": 5450,
+        "CommentTypeID": 100,
+        "CommentType": {
+          "ID": 100,
+          "Title": "Suggested Change (Note To Editors)"
+        },
+        "UserName": "Jontracey ",
+        "Comment": "Should be public-membership",
+        "DateCreated": "2012-06-06T10:22:05.967Z",
+        "IsActionedByEditor": true
+      },
+      {
+        "ID": 119,
+        "ChargePointID": 5450,
+        "CommentTypeID": 10,
+        "CommentType": {
+          "ID": 10,
+          "Title": "General Comment"
+        },
+        "UserName": "Jon tracey",
+        "Comment": "This charger now supports source London RFID cards, previously it was limited to a private scheme",
+        "Rating": 4,
+        "DateCreated": "2012-06-06T10:16:48.047Z"
+      }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2019-05-02T13:58:00Z",
+    "ID": 5450,
+    "UUID": "4D96127C-F681-4EC8-9128-3AE20DB08ECE",
+    "DataProviderID": 1,
+    "OperatorID": 32,
+    "OperatorsReference": "101",
+    "UsageTypeID": 4,
+    "UsageCost": "Inclusive; for Polar Plus subscription members only. Parking fees apply.",
+    "AddressInfo": {
+      "ID": 5388,
+      "Title": "Grafton East Car Park",
+      "AddressLine1": "Grafton East Car Park",
+      "AddressLine2": "Grafton Shopping Centre",
+      "Town": "Cambridge",
+      "StateOrProvince": "Cambridgeshire",
+      "Postcode": "CB1 1PS",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.20714542779274,
+      "Longitude": 0.13526892300978943,
+      "ContactTelephone1": "01223 458283",
+      "RelatedURL": "http://www.cambridge.gov.uk/ccm/content/transport-and-streets/car-parks/grafton-east-car-park.en",
+      "Distance": 0.6939556457892001,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 26722,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 4,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-05-02T13:58:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2011-08-29T11:42:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "DataProvider": {
+      "WebsiteURL": "http://chargepoints.dft.gov.uk",
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Contains public sector information licensed under the Open Government Licence v2.0.",
+      "DateLastImported": "2023-12-07T08:14:38.417Z",
+      "ID": 18,
+      "Title": "UK National Charge Point Registry"
+    },
+    "OperatorInfo": {
+      "WebsiteURL": "https://www.bppulse.co.uk/",
+      "Comments": "Formerly known as Polar Network, or BP Chargemaster",
+      "PhonePrimaryContact": "01582 400331",
+      "IsPrivateIndividual": false,
+      "IsRestrictedEdit": false,
+      "ID": 32,
+      "Title": "BP Pulse (UK)"
+    },
+    "UsageType": {
+      "ID": 1,
+      "Title": "Public"
+    },
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2023-05-04T08:50:00Z",
+    "ID": 214579,
+    "UUID": "CB90A31A-37C1-4873-8F51-1F2A915F0E88",
+    "DataProviderID": 18,
+    "DataProvidersReference": "3623a8f7905c155194176e1dec26da53",
+    "OperatorID": 32,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+      "ID": 214959,
+      "Title": "Aylestone Road East",
+      "AddressLine1": "Aylestone Road",
+      "Town": "Cambridge",
+      "Postcode": "CB4 1HF",
+      "CountryID": 1,
+      "Country": {
+        "ISOCode": "GB",
+        "ContinentCode": "EU",
+        "ID": 1,
+        "Title": "United Kingdom"
+      },
+      "Latitude": 52.21274,
+      "Longitude": 0.13112,
+      "AccessComments": "",
+      "RelatedURL": "https://www.bpchargemaster.com",
+      "Distance": 0.7225934545189435,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 357100,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "Reference": "FC17612-1",
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        }
+      },
+      {
+        "ID": 357101,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Type 2 (Socket Only)"
+        },
+        "Reference": "FC17612-2",
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        }
+      }
+    ],
+    "DateLastStatusUpdate": "2023-05-04T08:50:00Z",
+    "MetadataValues": [
+      {
+        "ID": 22405,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 3,
+    "DateCreated": "2023-02-09T08:13:00Z",
+    "SubmissionStatusTypeID": 100
+  }
+]

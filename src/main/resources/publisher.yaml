@@ -1,0 +1,19 @@
+space:
+  name: "demo.dev.iotics.space"
+
+connector:
+  makerThreadPoolSize: 32
+  sharePeriod: PT5S
+  forceCreation: true
+  forceDeletion: false
+
+identity:
+  userIdentityPath: "src/main/resources/identity/user.json"
+  agentIdentityPath: "src/main/resources/identity/demoAgent.json"
+  twinIdentityPath: "src/main/resources/identity/twins.json"
+  tokenDuration: PT10M
+
+openChargeMap:
+  key: "<obtain key>"
+  country: UK
+  testDataFile: "src/main/resources/testdata/data1000_GB_5_miles_Pboro.json"

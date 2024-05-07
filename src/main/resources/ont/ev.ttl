@@ -1,0 +1,88 @@
+@prefix ev: <https://data.iotics.com/ont/ev#> .
+
+# Classes
+ev:ElectricVehicleChargingStation a owl:Class ;
+    rdfs:label "Electric Vehicle Charging Station" .
+
+ev:ElectricVehicleChargingStationConnection a owl:Class ;
+    rdfs:label "Electric Vehicle Charging Station Connection" .
+
+# Properties
+ev:isPublic a owl:DatatypeProperty ;
+    rdfs:label "is Public" .
+
+ev:operator a owl:DatatypeProperty .
+
+ev:town a owl:DatatypeProperty .
+
+ev:addressPostcode a owl:DatatypeProperty ;
+    rdfs:label "address Postcode" .
+
+ev:addressStateOrProvince a owl:DatatypeProperty ;
+    rdfs:label "address State Or Province" .
+
+ev:isOperational a owl:DatatypeProperty ;
+    rdfs:label "is Operational" .
+
+ev:isLiveSubmission a owl:DatatypeProperty ;
+    rdfs:label "is Live Submission" .
+
+ev:isRecentlyVerified a owl:DatatypeProperty ;
+    rdfs:label "is Recently Verified" .
+
+ev:dateLastVerified a owl:DatatypeProperty ;
+    rdfs:label "date Last Verified" .
+
+ev:numberOfPoints a owl:DatatypeProperty ;
+    rdfs:label "number Of Points" .
+
+ev:isUserSelectable a owl:DatatypeProperty ;
+    rdfs:label "is User Selectable" .
+
+ev:chargingStationDid a owl:DatatypeProperty ;
+    rdfs:label "charging Station Did" .
+
+ev:chargingStationId a owl:DatatypeProperty ;
+    rdfs:label "charging Station Id" .
+
+ev:isFastChargeCapable a owl:DatatypeProperty ;
+    rdfs:label "is Fast Charge Capable" .
+
+ev:connectionTypeID a owl:DatatypeProperty ;
+    rdfs:label "connection Type ID" .
+
+ev:connectionTypeFormalName a owl:DatatypeProperty ;
+    rdfs:label "connection Type Formal Name" .
+
+ev:connectionTypeName a owl:DatatypeProperty ;
+    rdfs:label "connection Type Name" .
+
+ev:isConnectionTypeObsolete a owl:DatatypeProperty ;
+    rdfs:label "is Connection Type Obsolete" .
+
+ev:isConnectionTypeDiscontinued a owl:DatatypeProperty ;
+    rdfs:label "is Connection Type Discontinued" .
+
+ev:ampere a owl:DatatypeProperty .
+
+ev:voltage a owl:DatatypeProperty .
+
+ev:powerKW a owl:DatatypeProperty ;
+    rdfs:label "power KW" .
+
+ev:currentType a owl:DatatypeProperty ;
+    rdfs:label "current Type" .
+
+ev:currentTypeID a owl:DatatypeProperty ;
+    rdfs:label "current Type ID" .
+
+ev:quantity a owl:DatatypeProperty .
+
+# Relationships
+ev:hasConnectionPoint a owl:ObjectProperty ;
+    rdfs:label "has Connection Point" ;
+    rdfs:domain ev:ElectricVehicleChargingStation ;
+    rdfs:range ev:ElectricVehicleChargingStationConnection .
+
+# Individuals
+# Insert your individual instances here
