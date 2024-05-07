@@ -23,11 +23,8 @@ import smartrics.iotics.host.HttpServiceRegistry;
 import smartrics.iotics.host.IoticsApi;
 import smartrics.iotics.identity.Identity;
 import smartrics.iotics.identity.SimpleIdentityManager;
-import smartrics.iotics.identity.resolver.HttpResolverClient;
-import smartrics.iotics.identity.resolver.ResolverClient;
 
 import java.io.IOException;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -78,8 +75,8 @@ public class EvAnalytics {
     }
 
     public static void main(String[] args) throws Exception {
-//        runQuery(powerConsumptionByOperatorTown);
-        runQuery(operationalStations);
+        runQuery(powerConsumptionByOperatorTown);
+//        runQuery(operationalStations);
     }
 
     public static void runQuery(String query) throws IOException, InterruptedException, ExecutionException {

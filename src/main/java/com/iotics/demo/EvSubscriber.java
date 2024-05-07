@@ -41,7 +41,7 @@ public class EvSubscriber {
         IoticsApi ioticsApi = newIoticsApi(sim, endpoints.grpc(), conf.identity().tokenDuration());
 
         SubscriberCarTwin twin = new SubscriberCarTwin(ioticsApi, sim, "Fiat", "9891238909543", "500");
-        twin.updateLocation(52.568213, -0.244837);
+        twin.updateLocation(52.12471, -0.17315);
 
         LOGGER.info("Needing to make subscriber: {}", twin);
         ListenableFuture<UpsertTwinResponse> resultFut = twin.upsert();
@@ -65,14 +65,14 @@ public class EvSubscriber {
                 .setResponseType(ResponseType.FULL)
                 .setExpiryTimeout(Timestamp.newBuilder().setSeconds(5).build())
                 .setFilter(SearchRequest.Payload.Filter.newBuilder()
-                        .addProperties(Property.newBuilder()
-                                .setKey(RDF + "type")
-                                .setUriValue(Uri.newBuilder().setValue(ONT_EV + EV_CONNECTION).build()))
-                        .addProperties(Property.newBuilder().setKey(ONT_EV + "isOperational")
-                                .setLiteralValue(Literal.newBuilder().setDataType("boolean").setValue("true").build()).build())
-                        .addProperties(Property.newBuilder()
-                                .setKey(ONT_EV + "connectionTypeID")
-                                .setLiteralValue(Literal.newBuilder().setValue("25").build()).build())
+//                        .addProperties(Property.newBuilder()
+//                                .setKey(RDF + "type")
+//                                .setUriValue(Uri.newBuilder().setValue(ONT_EV + EV_CONNECTION).build()))
+//                        .addProperties(Property.newBuilder().setKey(ONT_EV + "isOperational")
+//                                .setLiteralValue(Literal.newBuilder().setDataType("boolean").setValue("true").build()).build())
+//                        .addProperties(Property.newBuilder()
+//                                .setKey(ONT_EV + "connectionTypeID")
+//                                .setLiteralValue(Literal.newBuilder().setValue("25").build()).build())
                         .setLocation(GeoCircle.newBuilder()
                                 .setRadiusKm(1) // search within 1Km
                                 .setLocation(GeoLocation.newBuilder()
