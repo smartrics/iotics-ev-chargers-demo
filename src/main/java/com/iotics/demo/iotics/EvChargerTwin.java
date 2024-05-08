@@ -1,6 +1,7 @@
 package com.iotics.demo.iotics;
 
 import com.iotics.api.GeoLocation;
+import com.iotics.api.UpsertTwinRequest;
 import com.iotics.demo.ocm.EvCharger;
 import smartrics.iotics.connectors.twins.*;
 import smartrics.iotics.connectors.twins.annotations.*;
@@ -15,11 +16,14 @@ import static com.iotics.demo.iotics.Const.ONT_EV;
 import static com.iotics.demo.iotics.Tools.*;
 
 public class EvChargerTwin extends AbstractTwin implements MappableMaker, MappablePublisher, AnnotationMapper {
+    private final EvCharger evCharger;
+
     @UriProperty(iri = UriConstants.RDFProperty.Type)
     private static String type = ONT_EV + EV_STATION;
-    private final EvCharger evCharger;
+
     @UriProperty(iri = UriConstants.IOTICSProperties.HostAllowListName)
     private final String visibility = UriConstants.IOTICSProperties.HostAllowListValues.ALL.toString();
+
     @Location
     private final GeoLocation location;
 
@@ -114,5 +118,12 @@ public class EvChargerTwin extends AbstractTwin implements MappableMaker, Mappab
         public static final String label = "OperationalStatus";
         @StringLiteralProperty(iri = UriConstants.RDFSProperty.Comment)
         public static final String comment = "Current operational status of this station";
+    }
+
+    @Override
+    public UpsertTwinRequest getUpsertTwinRequest() {
+        UpsertTwinRequest req = AnnotationMapper.super.getUpsertTwinRequest();
+        System.out.println(req.getPayload().getLocation());
+        return req;
     }
 }

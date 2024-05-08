@@ -151,7 +151,7 @@ public class EvMaker {
                 .withJitter(Duration.ofMillis(3000L));
 
 
-        LOGGER.debug("Upsert starting for [class={}. did={}]", name, did);
+        LOGGER.info("Upsert starting for [class={}. did={}]", name, did);
         if (!forceCreation && listedTwins.containsKey(did)) {
             LOGGER.info("Upsert skipped - already present [class={}, did={}]", name, did);
             twinsMade.incrementAndGet();

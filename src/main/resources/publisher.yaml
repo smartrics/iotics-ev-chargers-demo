@@ -16,4 +16,4 @@ identity:
 openChargeMap:
   key: "<obtain key>"
   country: UK
-  testDataFile: "src/main/resources/testdata/data10000_GB_25_miles_Cambridge.json"
+  testDataFile: "src/main/resources/testdata/data5_GB_25_miles_Cambridge.json"

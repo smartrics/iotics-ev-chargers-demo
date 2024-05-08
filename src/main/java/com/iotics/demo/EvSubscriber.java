@@ -14,7 +14,9 @@ import smartrics.iotics.host.HttpServiceRegistry;
 import smartrics.iotics.host.IoticsApi;
 import smartrics.iotics.identity.SimpleIdentityManager;
 
+import java.time.Duration;
 import java.util.ArrayList;
+import java.util.concurrent.CountDownLatch;
 import java.util.function.Consumer;
 
 import static com.iotics.demo.iotics.Const.*;
@@ -41,7 +43,7 @@ public class EvSubscriber {
         IoticsApi ioticsApi = newIoticsApi(sim, endpoints.grpc(), conf.identity().tokenDuration());
 
         SubscriberCarTwin twin = new SubscriberCarTwin(ioticsApi, sim, "Fiat", "9891238909543", "500");
-        twin.updateLocation(52.12471, -0.17315);
+        twin.updateLocation(52.21274, 0.13112);
 
         LOGGER.info("Needing to make subscriber: {}", twin);
         ListenableFuture<UpsertTwinResponse> resultFut = twin.upsert();
@@ -56,14 +58,21 @@ public class EvSubscriber {
 
     private void findAndBind() {
         SearchRequest.Payload payload = newSearchRequestPayload();
-        StreamObserver<SearchResponse.TwinDetails> so = newFollowingStreamObserver(payload);
-        twin.search(payload, so);
+        CountDownLatch latch = new CountDownLatch(1);
+        ArrayList<SearchResponse.TwinDetails> results = new ArrayList<>();
+        StreamObserver<SearchResponse.TwinDetails> so = newFollowingStreamObserver(latch, results, payload);
+        twin.search(payload, Duration.ofSeconds(5), so);
+        latch.countDown();
+        if (results.isEmpty()) {
+            LOGGER.warn("No twins found matching your filters [filter={}]", payload.getFilter());
+            return;
+        }
+        follow(results);
     }
 
     private SearchRequest.Payload newSearchRequestPayload() {
         return SearchRequest.Payload.newBuilder()
                 .setResponseType(ResponseType.FULL)
-                .setExpiryTimeout(Timestamp.newBuilder().setSeconds(5).build())
                 .setFilter(SearchRequest.Payload.Filter.newBuilder()
 //                        .addProperties(Property.newBuilder()
 //                                .setKey(RDF + "type")
@@ -74,7 +83,7 @@ public class EvSubscriber {
 //                                .setKey(ONT_EV + "connectionTypeID")
 //                                .setLiteralValue(Literal.newBuilder().setValue("25").build()).build())
                         .setLocation(GeoCircle.newBuilder()
-                                .setRadiusKm(1) // search within 1Km
+                                .setRadiusKm(10) // search within 1Km
                                 .setLocation(GeoLocation.newBuilder()
                                         .setLat(twin.location().getLat())
                                         .setLon(twin.location().getLon())
@@ -84,10 +93,8 @@ public class EvSubscriber {
                 .build();
     }
 
-    private StreamObserver<SearchResponse.TwinDetails> newFollowingStreamObserver(SearchRequest.Payload payload) {
+    private StreamObserver<SearchResponse.TwinDetails> newFollowingStreamObserver(CountDownLatch latch, ArrayList<SearchResponse.TwinDetails> results, SearchRequest.Payload payload) {
         return new StreamObserver<>() {
-            final ArrayList<SearchResponse.TwinDetails> results = Lists.newArrayList();
-
             @Override
             public void onNext(SearchResponse.TwinDetails twinDetails) {
                 LOGGER.info("Found twin [n={}]", twinDetails);
@@ -98,39 +105,40 @@ public class EvSubscriber {
             @Override
             public void onError(Throwable throwable) {
                 LOGGER.error("error when receiving search response", throwable);
+                latch.countDown();
             }
 
             @Override
             public void onCompleted() {
                 LOGGER.info("search response completed");
-                if (results.isEmpty()) {
-                    LOGGER.warn("No twins found matching your filters [filter={}]", payload.getFilter());
-                    return;
-                }
-                GeoLocation carLocation = GeoLocation.newBuilder()
-                        .setLat(EvSubscriber.this.twin.location().getLat())
-                        .setLon(EvSubscriber.this.twin.location().getLon())
-                        .build();
-                if (results.size() > 1) {
-                    // sort the list to find the closest EV charger
-                    results.sort((t1, t2) -> {
-                        double distanceFrom1 = HaversineDistance.apply(t1.getLocation(), carLocation);
-                        double distanceFrom2 = HaversineDistance.apply(t2.getLocation(), carLocation);
-                        return (int) (distanceFrom2 - distanceFrom1);
-                    });
-                }
-                SearchResponse.TwinDetails closest = results.getFirst();
-                LOGGER.info("Following closer twin [did={}]", closest.getTwinId().getId());
-                EvSubscriber.this.follow(closest, feedData -> LOGGER.info("Twin share: [mime={}, data={}]", feedData.getMime(), feedData.getData().toStringUtf8()));
-                // Follow ALL for other use cases
+                latch.countDown();
+            }
+        };
+    }
+
+    private void follow(ArrayList<SearchResponse.TwinDetails> results) {
+        GeoLocation carLocation = GeoLocation.newBuilder()
+                .setLat(EvSubscriber.this.twin.location().getLat())
+                .setLon(EvSubscriber.this.twin.location().getLon())
+                .build();
+        if (results.size() > 1) {
+            // sort the list to find the closest EV charger
+            results.sort((t1, t2) -> {
+                double distanceFrom1 = HaversineDistance.apply(t1.getLocation(), carLocation);
+                double distanceFrom2 = HaversineDistance.apply(t2.getLocation(), carLocation);
+                return (int) (distanceFrom2 - distanceFrom1);
+            });
+        }
+        SearchResponse.TwinDetails closest = results.getFirst();
+        LOGGER.info("Following closer twin [did={}]", closest.getTwinId().getId());
+        EvSubscriber.this.follow(closest, feedData -> LOGGER.info("Twin share: [mime={}, data={}]", feedData.getMime(), feedData.getData().toStringUtf8()));
+        // Follow ALL for other use cases
 //                searchResponse.getPayload().getTwinsList().forEach(twinDetails -> EvSubscriber.this.follow(twinDetails, new Consumer<FeedData>() {
 //                    @Override
 //                    public void accept(FeedData feedData) {
 //                        LOGGER.info("Twin share: [twin={}, mime={}, data={}]", twinDetails.getTwinId().getId(), feedData.getMime(), feedData.getData().toStringUtf8());
 //                    }
 //                }));
-            }
-        };
     }
 
     private void follow(SearchResponse.TwinDetails twinDetails, Consumer<FeedData> consumer) {
